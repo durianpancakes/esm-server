@@ -5,7 +5,7 @@ executed alone as it requires the front end application to work. The front end a
 [here](https://github.com/durianpancakes/esm).
 
 # Setting Up
-Disclaimer: The instructions provided assumes that the user is running on Windows.
+Disclaimer: The instructions provided assumes that the user is running on Windows PowerShell.
 
 The project is built with the following: 
 * Python 3.10.6
