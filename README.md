@@ -47,11 +47,11 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 ### INSTALLING REQUIREMENTS
 # You only need to run this once
-python3 -m pip install -r requirements.txt
+pip3 install -r requirements.txt
 ### END INSTALLING REQUIREMENTS
 
 ### RUNNING THE APPLICATION
 # Ensure that you have activated the virtual environment
-python3 app.py
+python app.py
 ```
 You may run the front end after this server is running.
