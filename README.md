@@ -31,14 +31,27 @@ Example:
 1. Ensure that the [front end](https://github.com/durianpancakes/esm) is set up.
 2. At the root directory, using a terminal, run the following:
 ```
+### SETTING UP THE VIRTUAL ENVIRONMENT
+# You only need to run this once
 python3 -m venv env
-source env/bin/activate
+### END SETTING UP THE VIRTUAL ENVIRONMENT
+
+### ACTIVATING THE VIRTUAL ENVIRONMENT
+.\env\Scripts\activate
+### END ACTIVATING THE VIRTUAL ENVIRONMENT
 
 ### OPTIONAL
 # If your system does not allow you to run scripts, run the following command:
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
 ### END OPTIONAL
 
+### INSTALLING REQUIREMENTS
+# You only need to run this once
 python3 -m pip install -r requirements.txt
+### END INSTALLING REQUIREMENTS
+
+### RUNNING THE APPLICATION
+# Ensure that you have activated the virtual environment
 python3 app.py
 ```
+You may run the front end after this server is running.
