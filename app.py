@@ -40,7 +40,7 @@ def process_csv_df(df):
             login = str(row.login)
             name = str(row.name)
             salary = float(row.salary)
-            if id == '' or login == '' or name == '' or salary < 0:
+            if id == '' or login == '' or name == '' or salary < 0 or len(df.columns) > 4:
                 raise exceptions.InvalidParameterException
             results.append((id, login, name, salary))
         except exceptions.InvalidParameterException as e:
@@ -136,7 +136,6 @@ def users():
                            f"ORDER BY {sort_by} {sort_type} "
                            f"LIMIT {limit} OFFSET {offset}")
             results = cursor.fetchmany(limit)
-            print("hmm")
 
             response = []
             print(results)
