@@ -19,7 +19,13 @@ To avoid any potential problems, please install the above version of Python and 
    * You may use your own credentials while setting up PostgreSQL. Please remember to change the credentials in 
    lines 15-19 of `app.py` to your credentials.
 3. Clone the repository into a directory of your choice.
-4. Run ``
+4. Open psql SQL Shell and run the following to set up the database. You will need to enter your credentials and server
+information. 
+```
+\i <directory containing db.sql in '/'>
+Example:
+\i 'C:/Users/user/db.sql'
+```
 
 # Running the Application
 1. Ensure that the [front end](https://github.com/durianpancakes/esm) is set up.
@@ -27,10 +33,12 @@ To avoid any potential problems, please install the above version of Python and 
 ```
 python3 -m venv env
 source env/bin/activate
-###
+
+### OPTIONAL
 # If your system does not allow you to run scripts, run the following command:
-Set-ExecutionPolicy RemoteSigned 
-###
-pip3 install -r requirements.txt
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+### END OPTIONAL
+
+python3 -m pip install -r requirements.txt
 python3 app.py
 ```
